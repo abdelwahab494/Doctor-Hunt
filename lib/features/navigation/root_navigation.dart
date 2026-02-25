@@ -5,7 +5,7 @@ class RootNavigation extends StatefulWidget {
 
   @override
   State<RootNavigation> createState() => _RootNavigationState();
-} 
+}
 
 class _RootNavigationState extends State<RootNavigation> {
   int currentIndex = 0;

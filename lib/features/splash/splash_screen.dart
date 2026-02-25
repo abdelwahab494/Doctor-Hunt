@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 270,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: theme.primaryColor.withOpacity(0.40),
+                color: theme.primaryColor.withValues(alpha: 0.40),
               ),
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 140, sigmaY: 140),
@@ -85,6 +85,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       curve: Curves.easeInOut,
                     ),
                 TXT("Doctor Hunt", fontSize: 25, fontWeight: FontWeight.w700)
+                
                     .animate(delay: Duration(milliseconds: 1600))
                     .fadeIn(duration: 300.milliseconds)
                     .slideY(
